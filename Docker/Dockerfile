@@ -6,6 +6,7 @@ RUN set -x; \
         apt-get update \
         && apt-get install -y --no-install-recommends \
             ca-certificates \
+            apt-utils \
             curl \
             node-less \
             python-gevent \
@@ -13,6 +14,7 @@ RUN set -x; \
             python-renderpm \
             python-support \
             python-watchdog \
+            python-ipdb \
             nano \
             wget \
         && curl -o wkhtmltox.deb -SL http://nightly.odoo.com/extra/wkhtmltox-0.12.1.2_linux-jessie-amd64.deb \
